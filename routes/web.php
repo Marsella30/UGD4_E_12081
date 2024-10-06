@@ -15,13 +15,22 @@ Route::get('/home', function () {
     $linkedin = 'https://www.linkedin.com/in/jerome-polin-sijabat-b0241247/';
     $github = 'https://www.github.com/Marsella30/';
 
+    $title = 'Home-12081';
+    $atma = 'Atmarior';
+    $home = 'Home';
+    $profile = 'Profile';
+
     return view('home', [
         'image1' => $image1, 
         'image2' => $image2, 
         'image3' => $image3,
         'ig' => $ig,
         'linkedin' => $linkedin,
-        'github' => $github
+        'github' => $github,
+        'title' => $title,
+        'atma' => $atma,
+        'home' => $home,
+        'profile' => $profile
     ]);
 });
 
